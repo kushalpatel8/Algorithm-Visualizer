@@ -1,4 +1,4 @@
-def quik_sort(arr, lo, hi):
+def quick_sort(arr, lo, hi):
     if lo < hi:
         pivot = arr[hi]
         i = lo - 1
@@ -11,5 +11,5 @@ def quik_sort(arr, lo, hi):
         yield arr, [i + 1, hi]
         
         pi = i + 1
-        yield from quik_sort(arr, lo, pi - 1)
-        yield from quik_sort(arr, pi + 1, hi)
+        yield from quick_sort(arr, lo, pi - 1)
+        yield from quick_sort(arr, pi + 1, hi)
