@@ -1,4 +1,4 @@
-from algorithms.tree.tree import postorder, inorder, preorder
+from algorithms.tree.tree import postorder, inorder, preorder, Node
 from ui.controls import ControlPanel
 from ui.styles import apply_mpl_theme, get_mpl_palette
 
